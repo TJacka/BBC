@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -47,86 +48,99 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.BBC {
-    margin-top: 180px;
+@media only screen and (max-width: 768px) {
+    html {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        display: none;
+    }
 }
 
-header {
-    height: 45px;
-    background: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+@media only screen and (min-width: 768px) {
+    .BBC {
+        margin-top: 180px;
+    }
 
-nav * {
-    display: inline-block;
-    color: white;
-}
+    header {
+        height: 45px;
+        background: black;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
 
-nav ul {
-    width: 100%;
-    height: 50px;
-}
+    nav * {
+        display: inline-block;
+        color: white;
+    }
 
-header li {
-    margin: 13px 20px 0px 20px;
-}
+    nav ul {
+        width: 100%;
+        height: 50px;
+    }
 
-nav {
-    max-width: 1280px;
-    margin: 0 auto;
-}
+    header li {
+        margin: 13px 20px 0px 20px;
+    }
 
-header a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
+    nav {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
 
-main {
-    max-width: 1280px;
-    margin: 0 auto;   
-}
+    header a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
 
-.leftmain {
-    width: 50%;
-    float: left;
-    height: 400px;
-}
+    main {
+        max-width: 1280px;
+        margin: 0 auto;   
+    }
 
-.rightmain {
-    width: 50%;
-    float: right;
-    height: 400px;
-}
+    .leftmain {
+        width: 50%;
+        float: left;
+        height: 400px;
+    }
 
-.news {
-    max-width: 1280px;
-}
+    .rightmain {
+        width: 50%;
+        float: right;
+        height: 400px;
+    }
 
-.newsstrip article {
-    width: 33.3333%;
-    float: left;
-}
+    .news {
+        max-width: 1280px;
+    }
 
-article * {
-    line-height: 1.2;
-    padding: 10px;
-}
+    .newsstrip article {
+        width: 33.3333%;
+        float: left;
+    }
 
-section h2 {
-    line-height: 1.2;
-    padding: 10px;
-}
+    article * {
+        line-height: 1.2;
+        padding: 10px;
+    }
 
-.rightmainbox {
-    height: 150px;
-}
+    section h2 {
+        line-height: 1.2;
+        padding: 10px;
+    }
 
-.righthalfbox {
-    width: 50%;
-    float: left;
-}
+    .rightmainbox {
+        height: 150px;
+    }
 
-.rightmainbox h3 {
-    margin-top: 80px;;
+    .righthalfbox {
+        width: 50%;
+        float: left;
+    }
+
+    .rightmainbox h3 {
+        margin-top: 80px;;
+    }
 }
