@@ -20,19 +20,18 @@ html {
 
     header {
         background: black;
-        
         height: 50px;
-    }
-
-    nav * {
-        display: inline-block;
-        color: white;
     }
 
     nav {
         max-width: 1280px;
         margin: 0 auto;
         padding: 15px;
+        display: flex;
+    }
+
+    ul {
+        display: flex;
     }
 
     header a {
@@ -40,15 +39,25 @@ html {
         font-weight: bold;
         font-size: 0.8rem;
         padding: 0 30px;
+        color: white;
     }
 
     main {
         max-width: 1280px;
         margin: 30px auto 0px auto;   
         height: 400px;
+        display: flex;
     }
 
-    .leftmain {
+    .righthalfbox {
+        display: flex;
+    }
+
+    .rightmainbox {
+        width: 60%;
+    }
+
+    /* .leftmain {
         width: 50%;
         float: left;
         height: 400px;
@@ -58,15 +67,26 @@ html {
         width: 50%;
         float: right;
         height: 400px;
-    }
+    } */
+
+    /* .righthalfbox {
+        width: 50%;
+        float: left;
+    } */
 
     h2 {
         padding: 10px;
+        max-width: 1280px;
+        margin: 0 auto;
     }
 
-    .newsstrip article {
+    /* .newsstrip article {
         width: 33.3333%;
         float: left;
+    } */
+
+    .newsstrip {
+        display: flex;
     }
 
     article * {
@@ -83,11 +103,6 @@ html {
         height: 150px;
     }
 
-    .righthalfbox {
-        width: 50%;
-        float: left;
-    }
-
     .rightmainbox h3 {
         margin-top: 80px;;
     }
@@ -96,6 +111,5 @@ html {
         border-left: 1px solid red;
         padding: 0 10px;
         margin: 10px 10px;
-
     }
 }
